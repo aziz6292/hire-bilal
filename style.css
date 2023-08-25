@@ -1,0 +1,211 @@
+/* Reset some default styles */
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  margin: 15px 120px;
+}
+
+/* Style for header */
+header {
+  background-color: #1d1a39;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+}
+
+/* Style for navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1a39;
+  padding: 5px 0;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style for sections */
+section {
+  border-bottom: 1px solid #ccc;
+  padding: 50px 0;
+}
+section h1,
+h2,
+h3,
+ul,
+ol,
+p {
+  margin: 15px 10%;
+}
+
+#about {
+  background: #451952;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin: 15px 120px;
+}
+
+#about ul {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+#about li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#about li:before {
+  content: "\2022"; /* Bullet point */
+  margin-right: 10px;
+}
+
+#services {
+  background: #662549;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+#services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#services h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#services ul {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+#services li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#services p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+#services p:last-child {
+  margin-bottom: 0;
+}
+
+#methodology {
+  background: #ae445a;
+  color: #ffffff;
+}
+
+#testimonials {
+  background: #f39f5a;
+  color: #333333; /* Dark gray text for better readability */
+}
+cite {
+  margin: 15px 120px;
+}
+
+#contact {
+  background: #e8bcb9;
+  color: #333333;
+}
+
+/* Style for footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60%;
+  background-color: #384358;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+footer p {
+  margin: 0;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  section h1,
+  h2,
+  h3,
+  p,
+  ul,
+  ol {
+    margin: 15px 5%;
+  }
+  nav ul {
+    gap: 20%;
+  }
+  footer {
+    gap: 40%;
+  }
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 10px;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0;
+    text-align: center;
+  }
+}
